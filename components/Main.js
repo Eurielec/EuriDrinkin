@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import './styles/Main.scss'
-import man from './assets/alejandro.png'
+//import '../styles/Main.scss'
+//import man from './assets/alejandro.png'
 import { Button } from '../components';
-import { Link } from 'react-router-dom';
+import  Link from 'next/link';
 
 const Main = () => {
     return (
@@ -42,9 +42,9 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
-                <div className="main__img">
+                {/* <div className="main__img">
                     <img src={man} alt="" />
-                </div>
+                </div> */}
             </div>
         </div>
     )

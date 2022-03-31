@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from 'react';
 
 import {Button} from '../components'
-import { Link } from 'react-router-dom';
-import './styles/Header.scss'
+import  Link  from 'next/link';
+//import '../styles/Header.scss'
 
 function Navbar() {
   const [click, setClick] = useState(false);
