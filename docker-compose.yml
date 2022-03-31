@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  sanva:
+    build: .
+    image: sanva
+    container_name: sanva
+    restart: unless-stopped
+    environment:
+      - SUPABASE_URL=$SUPABASE_URL
+      - SUPABASE_ANON=$SUPABASE_ANON
+    ports:
+      - 3000:3000
+    environment:
+      - TZ=Europe/Madrid
